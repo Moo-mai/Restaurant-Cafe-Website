@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านอาหาร & คาเฟ่ดีไลท์</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">🍽️ Delight Cafe</div>
+            <ul class="nav-menu">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#menu">เมนู</a></li>
+                <li><a href="#gallery">แกลเลอรี่</a></li>
+                <li><a href="#booking">จองโต๊ะ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ยินดีต้อนรับสู่ Delight Cafe</h1>
+            <p>สัมผัสประสบการณ์อาหารที่ดีที่สุด</p>
+            <a href="#booking" class="btn-primary">จองโต๊ะเลย</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">เมนูของเรา</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="appetizer">อาหารเรียกน้ำย่อย</button>
+                <button class="filter-btn" data-filter="main">อาหารจานหลัก</button>
+                <button class="filter-btn" data-filter="dessert">ของหวาน</button>
+                <button class="filter-btn" data-filter="drink">เครื่องดื่ม</button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu-grid">
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="สลัด">
+                    </div>
+                    <h3>สลัดผักสด</h3>
+                    <p>ผักสดกรอบ ราดน้ำสลัดพิเศษ</p>
+                    <span class="price">120 บาท</span>
+                </div>
+
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="กุ้งทอด">
+                    </div>
+                    <h3>กุ้งทอดกรอบ</h3>
+                    <p>กุ้งสดทอดกรอบ เสิร์ฟพร้อมซอส</p>
+                    <span class="price">180 บาท</span>
+                </div>
+
+                <div class="menu-item" data-category="main">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" alt="สปาเก็ตตี้">
+                    </div>
+                    <h3>สปาเก็ตตี้คาโบนาร่า</h3>
+                    <p>เส้นพาสต้าในซอสครีมเข้มข้น</p>
+                    <span class="price">220 บาท</span>
+                </div>
+
+                <div class="menu-item" data-category="main">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&h=300&fit=crop" alt="สเต็ก">
+                    </div>
+                    <h3>สเต็กเนื้อย่าง</h3>
+                    <p>เนื้อวัวนิวซีแลนด์ย่างสุกกำลังดี</p>
+                    <span class="price">450 บาท</span>
+                </div>
+
+                <div class="menu-item" data-category="dessert">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=400&h=300&fit=crop" alt="เค้ก">
+                    </div>
+                    <h3>เค้กชีสเค้ก</h3>
+                    <p>เค้กชีสนุ่มละมุน หอมกลิ่นวานิลลา</p>
+                    <span class="price">95 บาท</span>
+                </div>
+
+                <div class="menu-item" data-category="dessert">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="ไอศกรีม">
+                    </div>
+                    <h3>ไอศกรีมโฮมเมด</h3>
+                    <p>ไอศกรีมทำเองหลากหลายรสชาติ</p>
+                    <span class="price">85 บาท</span>
+                </div>
+
+                <div class="menu-item" data-category="drink">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop" alt="กาแฟ">
+                    </div>
+                    <h3>กาแฟลาเต้</h3>
+                    <p>เอสเพรสโซ่ผสมนมสดร้อน</p>
+                    <span class="price">75 บาท</span>
+                </div>
+
+                <div class="menu-item" data-category="drink">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop" alt="น้ำผลไม้">
+                    </div>
+                    <h3>น้ำผลไม้สดคั้น</h3>
+                    <p>น้ำผลไม้ตามฤดูกาล สดใหม่ทุกวัน</p>
+                    <span class="price">65 บาท</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">แกลเลอรี่</h2>
+            
+            <!-- Carousel -->
+            <div class="carousel">
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&h=600&fit=crop" alt="ภายในร้าน">
+                        <div class="carousel-caption">บรรยากาศภายในร้าน</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&h=600&fit=crop" alt="ที่นั่ง">
+                        <div class="carousel-caption">ที่นั่งสบายๆ</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=900&h=600&fit=crop" alt="เชฟ">
+                        <div class="carousel-caption">เชฟมืออาชีพ</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=900&h=600&fit=crop" alt="สวน">
+                        <div class="carousel-caption">มุมสวนสวย</div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">จองโต๊ะ</h2>
+            <div class="booking-form-container">
+                <form id="bookingForm" action="booking.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">ชื่อ-นามสกุล *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">เบอร์โทรศัพท์ *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">อีเมล *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">วันที่ *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">เวลา *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">จำนวนผู้ใช้บริการ *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">เลือกจำนวน</option>
+                            <option value="1">1 ท่าน</option>
+                            <option value="2">2 ท่าน</option>
+                            <option value="3">3 ท่าน</option>
+                            <option value="4">4 ท่าน</option>
+                            <option value="5">5 ท่าน</option>
+                            <option value="6+">6 ท่านขึ้นไป</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">หมายเหตุเพิ่มเติม</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">ยืนยันการจอง</button>
+                </form>
+
+                <div id="bookingMessage" class="booking-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Delight Cafe</h3>
+                    <p>ร้านอาหารและคาเฟ่คุณภาพ<br>เปิดบริการทุกวัน 10:00-22:00 น.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ติดต่อเรา</h3>
+                    <p>📍 123 ถนนสุขุมวิท กรุงเทพฯ<br>
+                    📞 02-xxx-xxxx<br>
+                    📧 info@delightcafe.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ติดตามเรา</h3>
+                    <p>Facebook | Instagram | Line</p>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2024 Delight Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
